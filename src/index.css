@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+b{
+  font-weight: 500;
+}
+
+p{
+  font-size: 18px;
+}
+
+.Custom-Polaris-Icon {
+  height: 20px; /* or value equivalent to 20px */
+  width: 20px; /* or value equivalent to 20px */
+  max-height: 100%;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  fill: #232122;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
