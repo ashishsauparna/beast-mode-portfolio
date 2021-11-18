@@ -104,9 +104,6 @@ button{
   text-transform: uppercase;
   font-weight: 600;
 }
-button:hover{
-  background: #505050;
-}
 button:focus{
   background: #232122;
   border: none;
@@ -120,22 +117,17 @@ button:focus{
   font-weight: 600;
 }
 
-.arrow_transition-enter {
-  opacity: 0;
+button .arrow_image{
+  width:0;
+  left: 0;
+  height: 14px;
+  overflow: hidden;
+  transition: 0.3s ease;
 }
 
-.arrow_transition-enter-active {
-  opacity: 1;
-  transition: opacity 500ms;
-}
-
-.arrow_transition-exit {
-  opacity: 1;
-}
-
-.arrow_transition-exit-active {
-  opacity: 0;
-  transition: opacity 500ms;
+button:hover .arrow_image{
+  width: 25px;
+  margin-right:13px;
 }
 
 .nav_button{
@@ -159,6 +151,20 @@ button:focus{
 }
 .link:hover{
   color: #505050;
+}
+
+.link .arrow_image{
+  transform:rotate(180deg);
+  width:0;
+  left: 0;
+  height: 14px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.link:hover .arrow_image{
+  width: 25px;
+  margin-right:13px;
 }
 
 .scrollNav{

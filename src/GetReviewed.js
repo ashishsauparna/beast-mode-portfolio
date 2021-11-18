@@ -1,10 +1,9 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './App.css'
 import arrow from './arrow_left_white.svg'
 
 export default function GetReviewed() {
 
-    const [hoverImage, setHoverImage] = useState(false)
     document.title = ('Video Sessions');
 
     return (
@@ -17,8 +16,8 @@ export default function GetReviewed() {
                 of UI. I’d love to help.
                 </p>
             </header>
-            <button onMouseEnter={() => setHoverImage(true)} onMouseLeave={() => setHoverImage(false)}>
-                { hoverImage ? <img className="arrow" src={arrow} alt="arrow" style={{width:"25px", marginRight:"13px"}}/> : null }
+            <button>
+                <img className="arrow_image" src={arrow} alt="arrow"/>
                 Watch my Sessions</button>
 
             <p style={{marginTop:"350px"}}>
